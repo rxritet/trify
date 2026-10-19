@@ -86,6 +86,7 @@ android/    # Gradle, AndroidManifest и нативная интеграция
 web/        # оболочка браузерного приложения
 assets/     # изображения и брендовые материалы
 docs/       # навигация, платформы, продуктовые и security-документы
+.agents/    # контекст, правила и проверки для рабочих агентов
 test/       # unit- и widget-тесты
 ```
 
@@ -99,11 +100,14 @@ test/       # unit- и widget-тесты
 ## Документация
 
 - [Навигатор документации](docs/README.md)
+- [Правила участия](CONTRIBUTING.md)
 - [Руководство Android](docs/platforms/android.md)
 - [Руководство Web](docs/platforms/web.md)
+- [Архитектура](docs/ARCHITECTURE.md)
+- [Технические решения](docs/TECHNICAL_DECISIONS.md)
 - [Описание дизайна](docs/product/design.md)
 - [План и границы MVP](docs/product/roadmap.md)
-- [Технические заметки для разработки](docs/DEVELOPMENT.md)
+- [Рабочая зона агентов](.agents/README.md)
 
 ## Лицензия
 

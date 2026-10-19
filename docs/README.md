@@ -4,7 +4,8 @@
 
 ```text
 docs/
-├── DEVELOPMENT.md       # подтверждённое состояние и правила разработки
+├── ARCHITECTURE.md      # фактическая структура приложения
+├── TECHNICAL_DECISIONS.md # принятые технические решения
 ├── platforms/           # запуск, сборка и нюансы каждой платформы
 │   ├── android.md
 │   └── web.md
@@ -19,7 +20,8 @@ docs/
 | --- | --- |
 | Запустить или собрать Android | [platforms/android.md](platforms/android.md) |
 | Запустить или развернуть web | [platforms/web.md](platforms/web.md) |
-| Изменить код и не выдать план за факт | [DEVELOPMENT.md](DEVELOPMENT.md) |
+| Понять слои и поток данных | [ARCHITECTURE.md](ARCHITECTURE.md) |
+| Узнать, почему выбраны текущие решения | [TECHNICAL_DECISIONS.md](TECHNICAL_DECISIONS.md) |
 | Понять интерфейс и визуальный язык | [product/design.md](product/design.md) |
 | Посмотреть MVP и будущие этапы | [product/roadmap.md](product/roadmap.md) |
 | Проверить модель Firestore | [security/firestore.md](security/firestore.md) |
