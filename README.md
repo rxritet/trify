@@ -28,8 +28,8 @@ Trify — учебное Flutter-приложение для планирова�
 
 | Платформа | Статус | Сборка | Подробнее |
 | --- | --- | --- | --- |
-| Android | Основная | APK / AAB | [Android](docs/ANDROID.md) |
-| Web | Поддерживается | Статические файлы | [Web](docs/WEB.md) |
+| Android | Основная | APK / AAB | [Android](docs/platforms/android.md) |
+| Web | Поддерживается | Статические файлы | [Web](docs/platforms/web.md) |
 
 У Android и web общий Dart-код в `lib/`. Платформенные файлы не смешиваются с артефактами: `build/`, Gradle-кэши, локальные настройки Android и ключи подписи исключены через `.gitignore`.
 
@@ -65,7 +65,7 @@ flutter run
 flutter run -d chrome
 ```
 
-Для поиска мест нужен интернет. Подробные команды и особенности каждой цели собраны в [Android](docs/ANDROID.md) и [Web](docs/WEB.md).
+Для поиска мест нужен интернет. Подробные команды и особенности каждой цели собраны в [Android](docs/platforms/android.md) и [Web](docs/platforms/web.md).
 
 ## Технологии
 
@@ -85,7 +85,7 @@ lib/        # тема, Firebase, авторизация и планировщи
 android/    # Gradle, AndroidManifest и нативная интеграция
 web/        # оболочка браузерного приложения
 assets/     # изображения и брендовые материалы
-docs/       # инструкции для каждой платформы
+docs/       # навигация, платформы, продуктовые и security-документы
 test/       # unit- и widget-тесты
 ```
 
@@ -98,11 +98,12 @@ test/       # unit- и widget-тесты
 
 ## Документация
 
-- [Руководство Android](docs/ANDROID.md)
-- [Руководство Web](docs/WEB.md)
-- [Описание дизайна](Trify/design.md)
-- [План и границы MVP](Trify/plan.md)
-- [Технические заметки для разработки](Trify/AGENTS.md)
+- [Навигатор документации](docs/README.md)
+- [Руководство Android](docs/platforms/android.md)
+- [Руководство Web](docs/platforms/web.md)
+- [Описание дизайна](docs/product/design.md)
+- [План и границы MVP](docs/product/roadmap.md)
+- [Технические заметки для разработки](docs/DEVELOPMENT.md)
 
 ## Лицензия
 
