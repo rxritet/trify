@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "231940923663",
+    "project_id": "trify-8f661",
+    "storage_bucket": "trify-8f661.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:231940923663:android:7c0df729e6728334041e7a",
+        "android_client_info": {
+          "package_name": "com.student.tripplanner.trip_planner"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "231940923663-pf1bg2qjag0akpnou6lc0vi53nh7f2cv.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.student.tripplanner.trip_planner",
+            "certificate_hash": "149eeb7adcecd8eabaa1d5d18ddcb94f8a6ec889"
+          }
+        },
+        {
+          "client_id": "231940923663-3o9qi8cnavnf043pvi5hgchtmh8l1e3d.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCuL1jCcm-uE_hw3bw22s24Jb1fYhTu_VU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "231940923663-3o9qi8cnavnf043pvi5hgchtmh8l1e3d.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,6 @@
+# Copy this file to android/key.properties and fill in values on the release machine.
+# Keep android/key.properties and the keystore out of version control.
+storePassword=change-me
+keyPassword=change-me
+keyAlias=upload
+storeFile=C:\\secure\\trify-upload.jks

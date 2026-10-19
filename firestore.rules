@@ -1,0 +1,56 @@
+rules_version = '2';
+service cloud.firestore {
+  match /databases/{database}/documents {
+    // Trify planner snapshot
+    // Path: users/{Firebase Auth UID}/planner/state
+    // Required fields: ownerId (immutable string), planner (map with trips and
+    // favorites lists), updatedAt (server timestamp). Every document is private
+    // to the Firebase Auth UID embedded in its path.
+
+    function isAuthenticated() {
+      return request.auth != null;
+    }
+
+    function isOwner(userId) {
+      return isAuthenticated() && request.auth.uid == userId;
+    }
+
+    function hasValidPlannerShape() {
+      let planner = request.resource.data.planner;
+      return planner is map &&
+          planner.keys().hasOnly(['trips', 'favorites']) &&
+          planner.keys().hasAll(['trips', 'favorites']) &&
+          planner.trips is list && planner.trips.size() <= 100 &&
+          planner.favorites is list && planner.favorites.size() <= 200;
+    }
+
+    function isValidPlannerState(userId) {
+      return request.resource.data.keys().hasOnly([
+               'ownerId', 'planner', 'updatedAt'
+             ]) &&
+          request.resource.data.keys().hasAll([
+               'ownerId', 'planner', 'updatedAt'
+             ]) &&
+          request.resource.data.ownerId is string &&
+          request.resource.data.ownerId == userId &&
+          request.resource.data.ownerId.size() > 0 &&
+          request.resource.data.ownerId.size() <= 128 &&
+          request.resource.data.updatedAt is timestamp &&
+          request.resource.data.updatedAt == request.time &&
+          hasValidPlannerShape();
+    }
+
+    match /users/{userId}/planner/state {
+      allow read: if isOwner(userId);
+      allow create: if isOwner(userId) && isValidPlannerState(userId);
+      allow update: if isOwner(userId) &&
+          request.resource.data.ownerId == resource.data.ownerId &&
+          isValidPlannerState(userId);
+      allow delete: if isOwner(userId);
+    }
+
+    match /{document=**} {
+      allow read, write: if false;
+    }
+  }
+}
