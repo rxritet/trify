@@ -8,7 +8,7 @@ flutter analyze
 flutter test
 ```
 
-Для Android используйте `flutter run`, для браузера — `flutter run -d chrome`. Дополнительные команды находятся в [документации платформ](docs/platforms/).
+Для Android используйте `flutter run`, для браузера — `flutter run -d chrome`. Дополнительные команды находятся в [документации платформ](platforms/).
 
 ## Как вносить изменения
 
@@ -17,4 +17,4 @@ flutter test
 3. Проверьте изменение соразмерно его риску.
 4. Сделайте один осмысленный коммит с кратким сообщением в настоящем времени.
 
-Перед работой полезно свериться с [архитектурой](docs/ARCHITECTURE.md), [техническими решениями](docs/TECHNICAL_DECISIONS.md) и [ограничениями проекта](docs/product/roadmap.md).
+Перед работой полезно свериться с [архитектурой](ARCHITECTURE.md), [техническими решениями](TECHNICAL_DECISIONS.md) и [ограничениями проекта](product/roadmap.md).

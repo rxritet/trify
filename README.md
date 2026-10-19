@@ -85,8 +85,8 @@ lib/        # тема, Firebase, авторизация и планировщи
 android/    # Gradle, AndroidManifest и нативная интеграция
 web/        # оболочка браузерного приложения
 assets/     # изображения и брендовые материалы
+config/     # Firebase CLI-конфигурация и правила Firestore
 docs/       # навигация, платформы, продуктовые и security-документы
-.agents/    # контекст, правила и проверки для рабочих агентов
 test/       # unit- и widget-тесты
 ```
 
@@ -100,14 +100,14 @@ test/       # unit- и widget-тесты
 ## Документация
 
 - [Навигатор документации](docs/README.md)
-- [Правила участия](CONTRIBUTING.md)
+- [Правила участия](docs/CONTRIBUTING.md)
 - [Руководство Android](docs/platforms/android.md)
 - [Руководство Web](docs/platforms/web.md)
 - [Архитектура](docs/ARCHITECTURE.md)
 - [Технические решения](docs/TECHNICAL_DECISIONS.md)
 - [Описание дизайна](docs/product/design.md)
 - [План и границы MVP](docs/product/roadmap.md)
-- [Рабочая зона агентов](.agents/README.md)
+- [Рабочая зона агентов](.github/agents/AGENTS.md)
 
 ## Лицензия
 

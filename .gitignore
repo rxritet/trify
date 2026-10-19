@@ -1,5 +1,6 @@
 # Dart / Flutter
 .dart_tool/
+.metadata
 .flutter-plugins
 .flutter-plugins-dependencies
 .pub/
