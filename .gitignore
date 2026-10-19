@@ -1,0 +1,43 @@
+# Dart / Flutter
+.dart_tool/
+.flutter-plugins
+.flutter-plugins-dependencies
+.pub/
+.pub-cache/
+/build/
+/coverage/
+
+# IDE
+.idea/
+.vscode/
+*.iml
+*.ipr
+*.iws
+
+# Android: local SDK configuration and generated Gradle state
+/android/.gradle/
+/android/.kotlin/
+/android/local.properties
+/android/app/debug/
+/android/app/profile/
+/android/app/release/
+/android/key.properties
+/android/app/*.jks
+/android/app/*.keystore
+
+# Apple platform is not part of the current project scope
+/ios/
+
+# Distribution outputs
+/dist/
+/release/
+
+# OS and temporary files
+.DS_Store
+Thumbs.db
+*.class
+*.log
+*.pyc
+*.swp
+.history/
+.svn/
